@@ -8,7 +8,14 @@
 // - 40個より多くリンゴを買ったら、りんご1個の値段は2 rustbucksになります。
 
 // TODO: 与えられたりんごの注文数の金額を計算する関数を書いてください。
-// fn calculate_price_of_apples(???) -> ??? { ??? }
+fn calculate_price_of_apples(i: i32) -> i32 {
+    // ここにコードを書いてください。
+    if i <= 40 {
+        i * 2
+    } else {
+        i
+    }
+}
 
 fn main() {
     // この行で関数のテストができます。

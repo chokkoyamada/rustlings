@@ -1,6 +1,6 @@
 fn main() {
     // TODO: 抜けているキーワードを追加しましょう。
-    x = 5;
+    let x: i32 = 5;
 
     println!("x has the value {x}");
 }

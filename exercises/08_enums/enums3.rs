@@ -5,6 +5,11 @@ struct Point {
 
 enum Message {
     // TODO: 以下で使う列挙子を記載してください。
+    Resize { width: u64, height: u64 },
+    Move(Point),
+    Echo(String),
+    ChangeColor(u8, u8, u8),
+    Quit,
 }
 
 struct State {

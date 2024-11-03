@@ -3,6 +3,7 @@ fn vec_loop(input: &[i32]) -> Vec<i32> {
 
     for element in input {
         // `input`スライスの各要素に関して2をかけて、`output`ベクタに追加してください。
+        output.push(element * 2);
     }
 
     output
@@ -18,12 +19,7 @@ fn vec_map_example(input: &[i32]) -> Vec<i32> {
 fn vec_map(input: &[i32]) -> Vec<i32> {
     // TODO: `input`スライスの各要素に2をかけたい(空の配列にpushするのではなく、mapを使って)。
     // `vec_map_example`関数を参考にしてください。
-    input
-        .iter()
-        .map(|element| {
-            // ???
-        })
-        .collect()
+    input.iter().map(|element| element * 2).collect()
 }
 
 fn main() {
